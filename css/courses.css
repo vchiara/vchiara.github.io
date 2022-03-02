@@ -1,0 +1,77 @@
+.courses-container {
+  background-color: #d4d8f0;
+  overflow: hidden;
+  min-height: 100vh;
+}
+ 
+
+.card-courses{
+  color: #232946;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  z-index: 3;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.card-courses:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-courses h3{
+  font-weight: 600;
+  color: #232946;
+  font-size: 16px !important;
+  margin-top: 10px;
+}
+
+.card-courses h4{
+  font-weight: 500;
+  color: #232946;
+  font-size: 12px !important;
+  margin-top: 2px;
+}
+
+.card-courses p{
+  font-weight: 500;
+  color: #232946;
+  margin-bottom: 4px;
+  font-size: 14px !important;
+}
+  
+
+.card-courses img{ 
+  position: absolute;
+  right: -60px;
+  top: 10px;
+  max-height: 120px;
+  z-index: -1;
+  opacity: .75;
+  transition: max-height 0.5s ease;
+}    
+
+.card-courses:hover img {
+  max-height: 180px;
+  top: 0px;
+}
+
+@media(max-width: 990px){
+  .card-courses{
+    margin: 20px;
+  }
+}
+
+@media(max-width: 768px){
+  .card-courses{
+    max-width: none;
+  }
+}
+
+.card-courses-row {
+  padding: 0 20px ;
+}

@@ -1,0 +1,186 @@
+.education-container {
+  min-height: 100vh;
+}
+
+.education-container h5 {
+  font-size: 17px;
+}
+
+.education-subcontainer {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px 0px;
+  margin: 0 auto;
+}
+
+.education-line-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.education-lg-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.education-container h3 {
+  font-size: 23px;
+  margin-bottom: 26px;
+}
+
+.education-subcontainer img {
+  margin-bottom: 36px;
+}
+
+.education-container p {
+  font-size: 14px;
+}
+
+.education-pink-stain {
+  z-index: 1;
+  bottom: -85px;
+  left: -190px;
+  transform: rotate(30deg);
+  width: 300px;
+}
+.education-dotted-stain {
+  z-index: 2;
+  bottom: -125px;
+  left: -190px;
+  transform: rotate(8deg);
+  width: 310px;
+}
+.education-dots {
+  z-index: 2;
+  bottom: -60px;
+  left: -85px;
+  transform: rotate(160deg);
+  width: 200px;
+}
+
+.tourism, .economics, .tourism-economics {
+  border-radius: 10px;
+  padding: 4px 4px 50px 4px; 
+}
+
+.tourism-economics {
+  background: #a29bfe;
+}
+
+.tourism > div, .economics > div, .tourism-economics > div {
+  max-height: 370px;
+  padding: 50px;
+}
+
+.economics {
+  background: #eebbc3;
+}
+
+.tourism {
+  background-color: #d4d8f0;
+}
+
+.graduation-container {
+  bottom: 10px;
+  position: relative;
+}
+
+.education-line {
+  height: 3px;
+  width: 100%;
+  margin: 0 auto;
+  background: #747e8f;
+}
+ 
+@media(max-width: 790px){
+  .education-line{
+    left: 40px;
+  }
+  
+}
+@media(max-width: 440px){
+  .education-line {
+    display: none;
+  }
+}
+
+.first-circle { 
+  color: white;
+  background-color: #a29bfe;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px; 
+  text-align: center; 
+}
+
+.second-circle { 
+  color: white;
+  background-color: #a29bfe;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px; 
+  text-align: center; 
+}
+
+.third-circle { 
+  color: white;
+  background-color: #a29bfe;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px; 
+  text-align: center; 
+}
+
+.education-container span {
+  font-size: 10px;
+  position: relative;
+  bottom: 4px;
+}
+
+.education-circle-bg {
+  background-color: #d4d8f0;
+  border-radius: 60px;
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.education-circle-bg img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  top: 33px;
+  left: 7px;
+}
+
+.bsc-tourism {
+  position: relative;
+  right: 80px;
+}
+
+.msc-tourism {
+  position: relative;
+  left: 80px;
+}
+
+.certificate {
+  position: relative;
+  right: 30px;
+}
+
+.cap {
+  position: relative;
+  left: 30px;
+}
+
+.education-mobile-container .education-circle-bg {
+  margin: 35px auto;
+}
+
+
+@media (max-width: 768px) { 
+  .education-subcontainer {
+    max-width: 100%;
+    z-index: 3;
+  }
+}

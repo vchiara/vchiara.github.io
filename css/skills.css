@@ -1,0 +1,167 @@
+ 
+
+.skills-container {
+  overflow-x: clip;
+}
+
+p.skills {
+  color: #232946;
+  font-weight: 500;
+  font-size: 16px !important;
+}
+
+p.level {
+  color: #232946;
+  font-weight: 600;
+  font-size: 16px !important;
+}
+
+.progress {
+  height: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.progress div {
+  transition: all 2s ease;
+}
+
+.progress .progress-bar {
+    background-color: #a29bfe
+}
+
+.outline-skills > div{ 
+  position: relative;
+}
+
+.outline-skills > div::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;   
+}
+
+.outline-skills > div:hover::before {
+  background: #eebbc3 
+
+}
+
+.outline-skills > div:hover > span {
+  color: white;
+  z-index: 1;
+}
+
+.outline-skills div { 
+  padding: 15px;
+  background: #ffffff;
+  border-color: #f7f6f6;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: 600;
+  text-align: center;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tools .python {
+  width: 40px;
+}
+
+.tools .tableau {
+  width: 60px;
+}
+
+.tools .sql {
+  width: 40px;
+}
+
+.tools .tensor-flow {
+  width: 50px;
+}
+
+.tools .html {
+  position: relative;
+  top: -5px;
+  left: 2px;
+  width: 25px;
+}
+
+.tools .css {
+  position: relative;
+  top: 5px;
+  right: 2px;
+  width: 25px;
+}
+
+.tool-images > div {
+  background-color: #eebbc3;
+  border-radius: 60%;
+  height: 75px;
+  width: 75px;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 15px #eebbc3;
+}
+
+.tool-images > div:hover {
+  transition: 0.3s all ease-in-out;
+  background: linear-gradient(130deg, #a29bfe 0%, #eebbc3 100%);
+  box-shadow: none;
+}
+
+.tool-images > div:hover > img {
+  -webkit-filter: hue-rotate(180deg);
+        filter: hue-rotate(180deg);
+}
+
+.tool-images {
+  padding: 30px;
+}
+
+.tools strong {
+  font-size: 50px;
+}
+
+.languages-pink-stain {
+  top: -130px;
+  right: -100px;
+  transform: rotate(117deg);
+  width: 160px;
+}
+
+.languages-dotted-stain {
+  top: -120px;
+  right: -80px;
+  transform: rotate(95deg);
+  width: 160px;
+}
+
+.languages-dots {
+  transform: rotate(-113deg);
+  top: -80px;
+  right: -95px;
+  width: 160px;
+}
+
+.languages {
+  flex: auto;
+  padding: 35px;
+}
+
+.skills-container > div {
+  min-height: 100vh;
+}
+
+.skills-tools {
+  padding: 35px;
+}

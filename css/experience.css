@@ -1,0 +1,34 @@
+.experience-blue-stain {
+    transform: rotate(-44deg); 
+    bottom: -180px;
+    width: 400px;
+    right: -14%;
+}
+
+.experience-container {
+    overflow-x: clip;
+    z-index: -5;
+}
+
+.experience-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    clip-path: polygon(-81% 59%, 0 110%, 110% 100%);
+}
+
+.experience-dotted-stain {
+    bottom: -180px;
+    width: 430px;
+    right: -15%;
+}
+
+.experience-drops {
+    bottom: -140px;
+    width: 330px;
+    right: -12%;
+}

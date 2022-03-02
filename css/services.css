@@ -1,0 +1,24 @@
+.services-container{
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.services-container p {
+  font-weight: 400; 
+  font-size: 12px;
+  margin-top: 10px
+}
+
+.service-image {
+  background-color: #d4d8f0;
+  height: 85px;
+  width: 85px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.service-image img{
+  max-height: 100%;
+}
