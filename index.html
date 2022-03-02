@@ -1,18 +1,1071 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKT65KCZ8B"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-DKT65KCZ8B');
-    </script>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Icons-->
+    <script src="https://kit.fontawesome.com/12811e2cd0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/timeline.css">
+    <link rel="stylesheet" href="./css/skills.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/education.css">
+    <link rel="stylesheet" href="./css/courses.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="./css/research.css">
+    <link rel="stylesheet" href="./css/izitoast.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+
+    <script type="text/javascript">
+
+      window.onload = function() {
+        ['email-copy-contact', 'email-copy'].forEach(function(id) {
+          document.getElementById(id).addEventListener("click", function() {
+            navigator.clipboard.writeText("valeriavchiara@gmail.com")
+            iziToast.success({ 
+              message: 'Email was copied to clipboard',
+              position: 'topRight'
+            });
+          })
+        })
+        
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm('service_wcoaxmd', 'template_rwazkxd', this, 'G8rF3lPFLXlOGRKHJ')
+                .then(function() {
+                    console.log('SUCCESS!');
+                    iziToast.success({ 
+                        title: 'Thank you!',
+                        message: 'Message sent',
+                        position: 'topRight'
+                    });
+
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+            event.target.reset();
+          });
+      }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DKT65KCZ8B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-DKT65KCZ8B');
+    </script>
+ 
+    <!-- SMART LOOK -->
+    <script type='text/javascript'>
+      window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', 'de68e1f2d9d64eae6067a209d62e3c124f11fd25', { region: 'eu' });
+    </script>
 
     <title>Valeria Villalobos</title>
   </head>
+
+  <body>
+    <div class="container-fluid background-purple hero-section vh-100 px-4 py-2 overflow-hidden position-relative" id="hero">
+      <!-- 
+        NAVBAR BEGINS 
+      -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav text-center"> 
+                <li class="nav-item active">
+                  <a class="nav-link text-white px-4" href="#services">Services</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link text-white px-4" href="#skills">Skills</a>
+                </li> 
+                <li class="nav-item active">
+                  <a class="nav-link text-white px-4" href="#projects">Projects</a>
+                </li> 
+                <li class="nav-item active">
+                  <a class="nav-link text-white px-4" href="#experience">Experience</a>
+                </li> 
+              </ul>
+            </div>
+          </div>
+        </nav>
+        
+      </div> 
+      <!-- 
+        NAVBAR ENDS 
+      -->
+
+      <!-- 
+        HERO BEGINS 
+      -->
+      <div class="row vertical-center introduction-text mt-5 flex-column-reverse flex-md-row hero">
+        <img src="./images/icons/hero/pink-stain.svg" class="position-absolute pink-stain"/>
+        <!-- <img src="./images/icons/hero/purple-stain.svg" class="position-absolute top-0 start-0"/> -->
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <div class="text-center">
+            <span class="text-white hero-name">
+              Valeria
+            </span>
+            <span class="text-white hero-name">
+              Villalobos
+            </span>
+            <p class="mt-2 text-white">
+              Researcher / Data Analyst
+            </p>
+            <div class="mt-5 row hero-btns justify-content-center">
+                <a class=" col-12 col-md-5 contact-btn text-white" href="#contact">Contact</a>
+                <a class="col-12 col-md-5 read-more-btn text-white"  target="_blank" href="./files/CV_VV.pdf">Download CV</a>
+            </div>
+          </div>
+          <img src="./images/icons/hero/purple-stain.svg" class="purple-stain position-absolute">
+          <img src="./images/icons/hero/dotted-stain.svg" class="dotted-stain position-absolute">
+          <img src="./images/icons/hero/points.svg" class="hero-dots-2 position-absolute">
+          <img src="./images/icons/hero/points.svg" class="hero-dots-3 position-absolute">
+          
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-center">
+          <div class="text-center position-relative"> 
+            <img src="./images/profile.jpg" class="img-rounded img-fluid float-end profile-picture" alt="Valeria Villalobos" width="400">
+          </div>
+          <img src="./images/icons/hero/plant.svg" class="plant-1 d-none d-md-flex d-lg-flex position-absolute">
+          <img src="./images/icons/hero/plant2.svg" class="plant-2 d-none d-md-flex d-lg-flex position-absolute">
+          <img src="./images/icons/hero/points.svg" class="hero-dots position-absolute">
+        </div>
+      </div>
+      <!-- 
+        HERO ENDS 
+      -->
+    </div>
+
+    <div class="container-fluid background-white presentation">
+      <div class="col text-center pt-5">
+        <p> 
+          Hi! My name is Valeria. I am a researcher and data analyst based in Italy. 
+          <br/>
+          I specialise in tourism forecasting and sustainability monitoring using innovative techniques.
+        </p>
+      </div>
+    </div>
+
+    <hr class="mt-5" id="services"/>
+
+    <!-- 
+      SERVICES BEGIN
+    -->
+
+    <div class="container-fluid background-white "  >
+      <div class="col text-center pt-5 ">
+        <h2>
+          <strong>Services</strong>
+        </h2>
+      </div>
+      <div class="services-container mt-3 pb-5 pt-3">
+        <div class="container pb-5">
+          <div class="row pt-4 justify-content-evenly">
+            <div class="col-md-3 text-center p-4">
+              <div class="service-image">
+                <img src="./images/services/diagram.png" alt="">
+              </div>
+              <strong>Data Analysis</strong>
+              <p>
+                Data analysis, visualization, and prediction with <strong> R and Python</strong>
+              </p>
+            </div>
+            <div class="col-md-3 text-center p-4">
+              <div class="service-image">
+                <img src="./images/services/book.png" alt="">
+              </div>
+              <strong>Project Management</strong>
+              <p>
+                Planning, management, and evaluation of EU projects as well as local and regional tourism development projects.
+              </p>
+            </div>
+            <div class="col-md-3 text-center p-4">
+              <div class="service-image">
+                <img src="./images/services/pie-chart.png" alt="">
+              </div>
+              <strong>Business Intelligence</strong>
+              <p>
+                Business data processing, analysis and forecasting. 
+              </p>
+            </div>
+          </div>
+
+          <div class="row pt-4 justify-content-evenly services">
+            <div class="col-md-3 text-center p-4">
+              <div class="service-image">
+                <img src="./images/services/analysis.png" alt="">
+              </div>
+              <strong>Research</strong>
+              <p>
+                Academic research and feasibility studies for development projects
+              </p>
+            </div>
+            <div class="col-md-3 text-center p-4">
+              <div class="service-image">
+                <img src="./images/services/idea.png" alt="">
+              </div>
+              <strong>Lessons</strong>
+              <p>
+                Planning and conducting lessons on tourism-related topics.
+              </p>
+            </div>
+            <div class="col-md-3 text-center p-4">
+              <div class="service-image">
+                <img src="./images/services/checklist.png" alt="">
+              </div>
+              <strong>Sustainability Indicators</strong>
+              <p>
+                Sustainability <strong>monitoring</strong>, designing and measuring sustainability indicators.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      SERVICES END
+    -->
+
+    <!-- 
+      SKILLS BEGIN
+    -->
+
+    <div class="container-fluid p-0 position-relative skills-container " id="skills">
+      <img src="./images/icons/hero/pink-stain.svg" class="position-absolute languages-pink-stain"/>
+      <img src="./images/icons/hero/dotted-stain.svg" class="languages-dotted-stain position-absolute">
+      <img src="./images/icons/hero/points.svg" class="languages-dots position-absolute">
+
+
+      <div class="row">
+        <div class="col-md-6 background-purple-light d-flex justify-content-center align-items-center">
+          <div class="languages">
+            <h3 class="text-center">
+             <strong>Languages</strong> 
+            </h3>
+            <div class="px-5 mt-5">
+              <div class="row">
+                <div class="col-sm-12 col-md-9">
+                <p class="mb-1 skills">Spanish</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                <p class="mb-1 level text-end">Native</p>
+                </div>
+              </div>
+              <div class="progress">
+                <div role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-8">
+                <p class="mb-1 skills">English</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                <p class="mb-1 level text-end">Advanced (C1)</p>
+                </div>
+              </div>
+              <div class="progress">
+                <div role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-7">
+                <p class="mb-1 skills">Italian</p>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                <p class="mb-1 level text-end">Intermediate (B2)</p>
+                </div>
+              </div>
+              <div class="progress">
+                <div role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              
+              <div class="row">
+                <div class="col-sm-12 col-md-9">
+                <p class="mb-1 skills">French</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                <p class="mb-1 level text-end">Basic (A2)</p>
+                </div>
+              </div>
+              <div class="progress">
+                <div role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+  
+              <div class="row">
+                <div class="col-sm-12 col-md-9">
+                <p class="mb-1 skills">German</p>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                <p class="mb-1 level text-end">Basic (A2)</p>
+                </div>
+              </div>
+              <div class="progress">
+                <div role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+  
+        <div class="col-md-6 d-flex skills-tools justify-content-center align-items-center flex-column">
+          <div class="p-2">
+            <h3 class="text-center pb-4">
+              <strong>Skills</strong> 
+            </h3>
+            <div class="row mb-4">
+              <div class="col-6 col-md-4 outline-skills">
+                <div>
+                  <span>
+                    Data analytics
+                  </span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 outline-skills">
+                <div>
+                  <span>
+                    Data visualization
+                  </span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 outline-skills">
+                <div>
+                  <span>
+                    Text analytics
+                  </span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 outline-skills">
+                <div>
+                  <span>
+                    Web scraping
+                  </span>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 outline-skills">
+                <div>
+                  <span>
+                    Prediction / Forecasting
+                  </span>
+                </div> 
+              </div>
+              <div class="col-6 col-md-4 outline-skills">
+                <div>
+                  <span>
+                    Machine learning
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 row">
+            <h3 class="text-center pb-4">
+              <strong>Tools</strong>
+            </h3>
+            <div class="row tools">
+              <div class="col-6 col-md-4 tool-images">
+                <div class="text-white text-center">
+                  <strong>R</strong>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 tool-images">
+                <div>
+                  <img class="python" src="./images/tools/python.png" alt="python">  
+                </div>
+              </div>
+              <div class="col-6 col-md-4 tool-images">
+                <div>
+                  <img class="tableau" src="./images/tools/tableau-logo-w2.svg" alt="tableau">  
+                </div>
+              </div>
+              <div class="col-6 col-md-4 tool-images">
+                <div>
+                  <img class="sql" src="./images/tools/SQL Database (SQL Azure).svg" alt="sql">  
+                </div>
+              </div>
+              <div class="col-6 col-md-4 tool-images">
+                <div>
+                  <img class="tensor-flow" src="./images/tools/TensorFlowLogo-w.svg" alt="TensorFlow">  
+                </div> 
+              </div>
+              <div class="col-6 col-md-4 tool-images">
+                <div>
+                  <img class="html" src="./images/tools/HTML5-logo.svg" alt="HTML">  
+                  <img class="css" src="./images/tools/CSS Logo.svg" alt="CSS">  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      SKILLS END 
+    -->
+
+    <!-- 
+      PROJECTS BEGIN 
+    -->
+
+    <div class="position-relative project-container vh-100 d-flex flex-column" id="projects">
+      <img src="./images/icons/hero/purple-stain.svg" class="project-purple-stain-left position-absolute">
+      <img src="./images/icons/hero/dotted-stain.svg" class="project-dotted-stain position-absolute">
+      <img src="./images/icons/hero/drops.svg" class="project-drops position-absolute">
+      <img src="./images/icons/hero/purple-stain.svg" class="project-purple-stain-right position-absolute">
+      <img src="./images/icons/hero/points.svg" class="projects-dots-right position-absolute">
+
+      
+    
+      <section class="ftco-section mt-5 pb-5">
+        <div class="col text-center pt-5 mb-5">
+          <h2 class="purple">Projects</h2>
+        </div>
+        <div class="container-carousel">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="featured-carousel owl-carousel">
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel4.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">R, RStudio</span>
+                        <h3><a target="_blank" href="https://github.com/vchiara/text-mining-eu-tourism">Text mining analysis for EU tourism projects</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel3.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">R, RStudio</span>
+                        <h3><a target="_blank" href="https://github.com/vchiara/google_api_address">Geocoding businesses with Google Maps API</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel5.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">Tableau</span>
+                        <h3><a target="_blank" href="https://public.tableau.com/app/profile/valeria.villalobos4140/viz/preliminary_cattolica_results/Spesamedia">Analysing tourist survey results from Cattolica, Italy</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel6.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">R, RStudio</span>
+                        <h3><a target="_blank" href="https://github.com/vchiara/twitter_data">Extracting Twitter data and storing it in Azure SQL</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel7.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">R, Shiny</span>
+                        <h3><a target="_blank" href="https://github.com/vchiara/tourist-arrivals">Visualizing tourist arrivals to Latin America with Shiny</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel9.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">R, RStudio</span>
+                        <h3><a target="_blank" href="https://github.com/vchiara/best_med_results">Analysing the results of the EU project 'BEST MED'</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="project">
+                    <div class="img d-flex align-items-end justify-content-center" style="background-image: url(./images/carousel/carousel8.jpg);">
+                      <div class="text w-100">
+                        <span class="cat">Python</span>
+                        <h3><a target="_blank" href="https://github.com/vchiara/airbnb">Visualization of Airbnb data for Rome, Italy</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- 
+      PROJECTS END 
+    -->
+
+    <!-- 
+      EXPERIENCE BEGIN
+    --> 
+
+    <div class="container-fluid background-pink position-relative experience-container" id="experience">
+      <img src="./images/icons/hero/blue-stain.svg" class="experience-blue-stain position-absolute">
+      <img src="./images/icons/hero/dotted-stain.svg" class="experience-dotted-stain position-absolute">
+      <img src="./images/icons/hero/drops.svg" class="experience-drops position-absolute">
+
+      <div class="col text-center pt-5">
+        <h2 class="purple">Experience</h2>
+      </div>
+
+      <div class="wrapper">
+        <div class="center-line">
+        </div>
+        <div class="row row-1">
+          <section>
+            <i class="icon fas"></i>
+            <div class="details">
+              <span class="title">Research Fellow</span>
+              <span class="date">Dec 2020 - Dec 2021</span>
+            </div>
+            <p class="company">Center for Advanced Studies in Tourism (CAST)<br>
+              University of Bologna, Italy</p>
+            <p>Scientific research linked to the BEST MED EU project, as well as other local and regional tourism development projects. <br>
+              Feasibility studies, data collection, and data analysis.</p>
+          </section>
+        </div>
+        <div class="row row-2">
+          <section>
+            <i class="icon fas"></i>
+            <div class="details">
+              <span class="title">Research Intern</span>
+              <span class="date">Apr 2020 – Oct 2020 </span>
+            </div>
+            <p class="company">Center for Advanced Studies in Tourism (CAST)<br>
+              University of Bologna, Italy</p>
+            <p>Collaborated on EU tourism development projects. <br>
+              Data mining and web scraping techniques to extract and process statistical information.</p>
+          </section>
+        </div>
+        <div class="row row-1">
+          <section>
+            <i class="icon fas"></i>
+            <div class="details">
+              <span class="title">Business Consultant</span>
+              <span class="date">Jun 2017 – Sep 2019 </span>
+            </div>
+            <p class="company">TAS Automation<br>
+              Houston, United States (Remote)</p>
+            <p>Successfully managed industrial automation projects on an international scale.<br>
+              Implementation of pricing, budgeting and financial reporting strategies and tools.</p>
+          </section>
+        </div>
+        <div class="row row-2">
+          <section>
+            <i class="icon fas"></i>
+            <div class="details">
+              <span class="title">Teaching Assistant</span>
+              <span class="date">Apr 2015 - May 2016</span>
+            </div>
+            <p class="company">Foreign Languages Area<br>
+              Universidad de Oriente, Venezuela</p>
+            <p>Academic tutoring for undergraduate students of the subject “English as a Foreign Language”.</p>
+          </section>
+        </div>
+        <div class="row row-1">
+          <section>
+            <i class="icon fas"></i>
+            <div class="details">
+              <span class="title">Technical Assistant</span>
+              <span class="date">Apr 2014 - May 2015</span>
+            </div>
+            <p class="company">Tourism Heritage Area<br>
+              Universidad de Oriente, Venezuela</p>
+            <p>Academic tutoring for undergraduate students in the subject "Tourist Destination Management".<br>
+              Scientific research assistance.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      EXPERIENCE END
+    -->
+
+    <!-- 
+      EDUCATION BEGINS
+    -->
+
+    <div class="container-fluid background-white position-relative d-flex justify-content-center flex-column education-container" id="education">
+      <img src="./images/icons/hero/pink-stain.svg" class="education-pink-stain position-absolute"/>
+      <img src="./images/icons/hero/dotted-stain.svg" class="education-dotted-stain position-absolute">
+      <img src="./images/icons/hero/points.svg" class="education-dots position-absolute">
+ 
+
+      <div class="education-subcontainer position-relative">
+        <div class="mb-5 text-center">
+          <h2 class="purple">Education</h2>
+        </div>
+        <div class=" d-none d-md-block d-lg-block education-lg-container">
+          <div class="d-flex justify-content-between mb-5">
+            <div class="education-circle-bg certificate">
+              <img src="./images/icons/education/certificate2.png" alt="">
+            </div>
+            <div class="education-circle-bg">
+              <img src="./images/icons/education/graph.png" alt="">
+            </div>
+            <div class="education-circle-bg cap">
+              <img src="./images/icons/education/cap.png" alt="">
+            </div>
+          </div>
+          <div class="position-relative education-line-container">
+            <div class="education-line"></div>
+            <div class="d-flex justify-content-between graduation-container">
+              <div class="first-circle">
+                <span><i class="fas fa-2xs fa-graduation-cap"></i></span>
+              </div>
+              <div class="second-circle">
+                <span><i class="fas fa-2xs fa-graduation-cap"></i></span>
+              </div>
+              <div class="third-circle">
+                <span><i class="fas fa-2xs fa-graduation-cap"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between mb-5 text-center mt-4">
+            <div class="col-4 bsc-tourism">
+              <h5>BSc. in Tourism</h5>
+              <p>
+                Universidad de Oriente <br>
+                Nueva Esparta, Venezuela <br>
+                2010 – 2016
+              </p>
+            </div>
+            <div class="col-4">
+              <h5>MSc. in Economics</h5>
+              <p>
+                University of Konstanz (Erasmus+)
+                Konstanz, Germany <br>
+                2019 – 2020
+              </p>
+            </div>
+            <div class="col-4 msc-tourism">
+              <h5>MSc. in Tourism Economics</h5>
+              <p>
+                University of Bologna<br>
+                Rimini, Italy <br>
+                2018 – 2020
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-block d-sm-block d-md-none education-mobile-container"> 
+          <div class="row justify-content-center mb-5 text-center mt-4 flex-column">
+            <div class="col-12">
+              <div class="education-circle-bg">
+                <img src="./images/icons/education/certificate2.png" alt="">
+              </div>
+              <h5>BSc. in Tourism</h5>
+              <p>
+                Universidad de Oriente <br>
+                Nueva Esparta, Venezuela <br>
+                2010 – 2016
+              </p>
+            </div>
+            <div class="col-12">
+              <div class="education-circle-bg">
+                <img src="./images/icons/education/graph.png" alt="">
+              </div>
+              <h5>MSc. in Economics</h5>
+              <p>
+                University of Konstanz (Erasmus+)
+                Konstanz, Germany <br>
+                2019 – 2020
+              </p>
+            </div>
+            <div class="col-12">
+              <div class="education-circle-bg">
+                <img src="./images/icons/education/cap.png" alt="">
+              </div>
+              <h5>MSc. in Tourism Economics</h5>
+              <p>
+                University of Bologna<br>
+                Rimini, Italy <br>
+                2018 – 2020
+              </p>
+            </div>
+          </div>
+         
+        </div>
+       
+      </div> 
+    </div>
+
+    <!-- 
+      EDUCATION ENDS 
+    -->
+    
+    <!-- 
+      COURSES BEGIN
+    -->
+
+    <div class="d-flex justify-content-center align-items-center flex-column text-center pt-4 pb-4 courses-container position-relative"> 
+
+      <h2 class="purple mb-4">Courses</h2>
+
+      <div class="container pb-5">
+        <div class="card-courses-row row pt-sm-0 pt-md-4 justify-content-evenly">
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/connection.png">
+            <div class="text-start">
+              <h3>Deep Learning</h3>
+              <p>Big Data Lab - Regione ER</p>
+              <h4>Current</h4>
+            </div>
+          </div>
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/achievement2.png" alt="">
+            <div class="text-start">
+              <h3>Data Analysis Tools</h3>
+              <p>Big Data Lab - Regione ER</p>
+              <h4>Current</h4>
+            </div>
+          </div>
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/atom2.png" alt="">
+            <div class="text-start">
+              <h3>Data Science Summer School</h3>
+              <p>Hertie School</p>
+              <h4>2021</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-courses-row row pt-sm-0 pt-md-4 justify-content-evenly">
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/web-programming.png" alt="">
+            <div class="text-start">
+              <h3>Crash Course on Python</h3>
+              <p>Coursera (Google)</p>
+              <h4>2020</h4>
+            </div>
+          </div>
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/analytics.png" alt="">
+            <div class="text-start">
+              <h3>Advanced Analytics In R</h3>
+              <p>Super Data Science</p>
+              <h4>2018</h4>
+            </div>
+          </div>
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/report.png" alt="">
+            <div class="text-start">
+              <h3>Web Applications in R</h3>
+              <p> Datacamp</p>
+              <h4>2018</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-courses-row row pt-sm-0 pt-md-4 justify-content-evenly">
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/book3.png" alt="">
+            <div class="text-start">
+              <h3>Teacher Training Certificate</h3>
+              <p>Universidad de Oriente</p>
+              <h4>2017</h4>
+            </div>
+          </div>
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/report2.png" alt="">
+            <div class="text-start">
+              <h3>Regression and Modelling</h3>
+              <p>Coursera (Duke University)</p>
+              <h4>2017</h4>
+            </div>
+          </div>
+          <div class="card-courses col-md-3 col-12 d-flex p-4">
+            <img src="./images/icons/courses/gear.png" alt="">
+            <div class="text-start">
+              <h3>R for Data Science</h3>
+              <p>edX (Microsoft)</p>
+              <h4>2017</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      COURSES END
+    -->
+
+    <!-- 
+      PUBLICATIONS BEGIN 
+    -->
+
+    <div class="container-fluid mb-5" id="publications">
+      <div class="col text-center pt-5">
+      <h2 class="">
+        <strong>Publications</strong>
+      </h2>
+      </div>
+
+      <div class="research-container mt-5 pb-3 pt-3">
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-6 d-flex mb-6">
+            <a target="_blank" href="https://www.igi-global.com/book/handbook-research-cultural-tourism-sustainability/276506" class="research m-3 p-3 d-flex align-items-center">
+              <img src="./images/icons/publications/map.png" width="70" height="70" alt="">
+              <div class="mx-3">
+                <h2>Working paper</h2>
+                <p>Monitoring sustainability along cultural routes: <i>The case of the Med Sustainable Path and Cultural Route (S&C Path) model</i>, 2022.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-6 d-flex mb-6">
+            <a target="_blank" href="https://best-med.interreg-med.eu/what-we-achieve/deliverables-database/detail/?tx_elibrary_pi1%5Blivrable%5D=12555&tx_elibrary_pi1%5Baction%5D=show&tx_elibrary_pi1%5Bcontroller%5D=Frontend%5CLivrable&cHash=b73b5a8e815966bc31090594b39ef7d5" class="research m-3 p-3 d-flex align-items-center">
+              <img src="./images/icons/publications/cap.png" width="70" height="70" alt="">
+              <div class="mx-3">
+                <h2>EU projects</h2>
+                <p>Proposal for a standard system of big data sets available at the Mediterranean level, 2021.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-6 d-flex mb-6">
+            <a target="_blank" href="https://www.academia.edu/49206071/Good_Practices_in_EU_Tourism_Projects_An_Application_of_Text_Mining" class="research m-3 p-3 d-flex align-items-center">
+              <img src="./images/icons/publications/search.png" width="70" height="70" alt="">
+              <div class="mx-3">
+                <h2>MSc. Thesis</h2>
+                <p>Good practices in EU tourism projects: An application of text mining, 2020.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-6 d-flex mb-6">
+            <a target="_blank" href="https://www.academia.edu/49206147/Aproximaci%C3%B3n_a_un_modelo_matem%C3%A1tico_para_analizar_el_turismo_emisor_venezolano" class="research m-3 p-3 d-flex align-items-center">
+              <img src="./images/icons/publications/medal.png" width="70" height="70" alt="">
+              <div class="mx-3">
+                <h2>BSc. Thesis</h2>
+                <p>Towards a mathematical model to analyse Venezuelan outbound tourism, 2016.</p>
+              </div>
+            </a>
+          </div> 
+        </div>
+      </div>
+    </div>
+
+      <!-- 
+      PUBLICATIONS END 
+    -->
+
+    <!-- 
+      CONTACT ME BEGINS 
+    -->
+
+    <div class="container-fluid background-pink form-contact-container" id="contact">
+        <div class="col text-center pt-5">
+        <h2 class="purple">Contact</h2>
+        </div>
+
+        <div class="row mt-3 pb-3 pt-3">
+        <div class="contact-container d-flex p-0">
+          <div class="form-container">
+            <div class="left-container">
+              <div class="left-inner-container">
+                <h2>Let's Chat</h2>
+                <p>Whether you have a question, want to start a project or simply want to connect.</p><br>
+                <p>Feel free to send me a message in the contact form</p>
+                <div class="social-container">
+                  <a  id="email-copy-contact" class="social"><i class="fas fa-envelope"></i></a>
+                  <a  target="_blank"  href="https://www.linkedin.com/in/vvillalobosc" class="social"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="right-container">
+              <div class="right-inner-container">
+                <form class="mt-3 pt-2" action="#" id="contact-form">
+                  <h2 class="sm-view">Let's Chat</h2>
+                  <p>* Required</p>
+                  <input required name="from_name" type="text" placeholder="Name *"  />
+                  <input required name="reply_to" type="email" placeholder="Email *" />
+                  <textarea required name="message" rows="4" placeholder="Message *"></textarea>
+                  <button class="contact-button">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+      CONTACT ME ENDS 
+    -->
+    
+    <!-- 
+      FOOTER BEGINS 
+    -->
+
+    <footer class="footer-purple">
+      <div class="site-section">
+        <div class="container">
+
+
+          <div class="row">
+            <div class="col-sm  d-none d-md-flex d-lg-flex">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="italy">Italy</span>
+            </div>
+
+            <div class="col-sm text">
+              <h3 class="mb-4" >About me</h3>
+              <ul class="list-unstyled links">
+                <li>
+                  <a href="#skills">
+                    <strong>Skills</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#experience">
+                    <strong>Experience</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#education">
+                    <strong>Education</strong>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm text">
+              <h3 class="mb-4">Further Information</h3>
+              <ul class="list-unstyled links">
+                <li>
+                  <a href="#services">
+                    <strong>Services</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#projects">
+                    <strong>Projects</strong>
+                  </a>
+                </li>
+                <li>
+                  <a href="#publications">
+                    <strong>Publications</strong>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 contact">
+              <h3>Contact</h3>
+              <ul class="list-unstyled social">
+                <li><a id="email-copy"><span class="fas fa-envelope"></span></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/in/vvillalobosc"><span class="fab fa-linkedin"></span></a></li>
+                <li><a target="_blank" href="https://github.com/vchiara"><span class="fab fa-github"></span></a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="row mt-5 pt-5">
+            <p class="copyright text-white">&copy; 2022. Made with &#9825; by me.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 
+      FOOTER ENDS 
+    -->
+    <button
+      type="button"
+      class="btn text-white background-purple btn-floating btn-lg go-up-btn rounded-circle d-none "
+      id="btn-back-to-top"
+      onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;"
+      >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="./js/izitoast.js"></script>
+    <script>
+      var isHeroIntersecting = true
+      // Check if the main section is visible on the screen
+      var heroObserver = new IntersectionObserver(function(entries) {
+        isHeroIntersecting = entries[0].isIntersecting
+        if(!document.querySelector("#navbarNav").classList.contains("show")) {
+          document.querySelector(".navbar").classList.toggle("background-purple", !entries[0].isIntersecting)
+          document.querySelector(".go-up-btn").classList.toggle("d-md-block", !entries[0].isIntersecting)
+          document.querySelector(".go-up-btn").classList.toggle("d-lg-block", !entries[0].isIntersecting)
+        }
+      }, { threshold: 0.8 });
+
+      heroObserver.observe(document.querySelector(".hero"));
+
+      // Check if the languages progress bar are visible on the screen
+      var languageObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(el) {
+          if(el.isIntersecting) {
+            el.target.children[0].classList.add("progress-bar")
+            languageObserver.unobserve(el.target)
+          }
+        })
+    
+      }, { threshold: 1 });
+
+      document.querySelectorAll(".progress").forEach(function(el) {
+        languageObserver.observe(el);
+      })
+
+      document.querySelector(".navbar-toggler").addEventListener("click", function() {
+        if (isHeroIntersecting) {
+          document.querySelector(".navbar").classList.toggle("background-purple")
+        }
+      })
+
+      
+    </script>
+  </body>
 </html>
