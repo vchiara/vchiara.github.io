@@ -1,5 +1,3 @@
- 
-
 .skills-container {
   overflow-x: clip;
 }
@@ -136,21 +134,21 @@ p.level {
   top: -130px;
   right: -100px;
   transform: rotate(117deg);
-  width: 160px;
+  width: 200px;
 }
 
 .languages-dotted-stain {
   top: -120px;
   right: -80px;
   transform: rotate(95deg);
-  width: 160px;
+  width: 210px;
 }
 
 .languages-dots {
   transform: rotate(-113deg);
   top: -80px;
   right: -95px;
-  width: 160px;
+  width: 200px;
 }
 
 .languages {
