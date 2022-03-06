@@ -1,6 +1,13 @@
 .project-container {
   overflow-x: clip;
 }
+
+@media(max-width: 768px){
+  .project-container{
+    height: 80vh !important;
+  }
+}
+
 .container-carousel {
   width: 100%;
   padding-right: 15px;
@@ -192,3 +199,4 @@
   left: -35px;
   transform: rotate(90deg);
 }
+

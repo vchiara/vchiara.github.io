@@ -1,9 +1,17 @@
 .experience-blue-stain {
     transform: rotate(-44deg); 
-    bottom: -180px;
-    width: 400px;
-    right: -14%;
+    bottom: -160px;
+    width: 350px;
+    right: -12%;
 }
+
+@media(max-width: 768px){
+    .experience-blue-stain{
+        bottom: -150px !important;
+        width: 250px !important;
+        right: -25%;
+    }
+  }
 
 .experience-container {
     overflow-x: clip;
@@ -22,13 +30,29 @@
 }
 
 .experience-dotted-stain {
-    bottom: -180px;
-    width: 430px;
+    bottom: -165px;
+    width: 400px;
     right: -15%;
 }
 
+@media(max-width: 768px){
+    .experience-dotted-stain{
+        bottom: -165px !important;
+        width: 300px !important;
+        right: -35%;
+    }
+  }
+
 .experience-drops {
     bottom: -140px;
-    width: 330px;
+    width: 270px;
     right: -12%;
 }
+
+@media(max-width: 768px){
+    .experience-drops{
+        bottom: -115px !important;
+        width: 200px !important;
+        right: -25%;
+    }
+  }

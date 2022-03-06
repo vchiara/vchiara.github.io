@@ -12,11 +12,6 @@ html, body {
  margin-top: 15px;
  align-self: center;
 }
-
-.hero-btns > a:first-child {
-  margin-right: 4px;
-}
-
 .svg-blob {
   position: absolute;
   top: -100px;
@@ -323,7 +318,7 @@ nav {
 
 
 .contact-btn:hover {
-  color: white;
+  color: #232946 !important;
 }
 
 @media (max-width: 768px) {
