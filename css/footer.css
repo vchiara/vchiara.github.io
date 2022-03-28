@@ -63,8 +63,9 @@ a, a:hover {
 }
 
 .footer-purple .social li a:hover {
-  color: #232946;
+  color: #232946 !important;
 }
+
 .footer-purple .footer-logo {
     color: #fff;
     font-size: 20px;

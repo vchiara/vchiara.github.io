@@ -32,6 +32,10 @@ h1 {
  font-size: 56px !important;
 }
 
+h2 {
+  color: #232946;
+ }
+
 h2.purple {
  color: #232946;
  font-weight: 700;
